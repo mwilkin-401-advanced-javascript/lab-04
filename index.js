@@ -38,9 +38,11 @@ let stringifyBuffer = (data) => {
 let fileReader = () => {
   fs.readFile('./files/pair-programming.txt',(err, data) => {
     if (err) throw err;
-    console.log(data);
+    let stringData = stringifyBuffer(data).split('.');
     console.log(stringifyBuffer(data));
+    console.log(stringData);
   });
 };
+
 
 fileReader();

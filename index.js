@@ -6,7 +6,7 @@ const readline = require('readline');
 
 let names = ['Tia, Flowey, Maggie'];
 
-let longString = [`'use strict';\n\nlet names=['Flowy', 'Tia', 'Sparky'];\n\nlet stringifyBuffer = () =>{\n  let str = '';\n  for( let char of buffer){\n    str += String.fromCharCode(char);\n  }\n  return str;\n};\n`];
+let longString = [`'use strict';\n\nlet names=['Flowy', 'Tia', 'Sparky'];\n\nlet stringifyBuffer = () =>{\n  let str = '';\n  let buffer = 'me'\n  for( let char of buffer){\n    str += String.fromCharCode(char);\n  }\n  return str;\n};\n`];
 
 let fileCreator = (source) => {
   fs.writeFile('./files/loop.js', source, 'utf8', (err) => {

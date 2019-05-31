@@ -60,7 +60,7 @@ class Converter {
     this.buffer = Buffer.concat([this.buffer, this.tags[tag].open, this.buffer, this.tags[tag].close]);
   }
 
-  fileWriter(file) {
+  convert(file) {
     let lineReader = reader.createInterface({
       input: fs.createReadStream(file),
     });
@@ -90,9 +90,6 @@ let htmlTags = new Converter();
 htmlTags.convert('./files/pair-programming.txt');
 
 // module.exports = fileCreation, fileWriter;
-
-
-
 
 // Demo code from class
 // class Converter {

@@ -1,7 +1,8 @@
 'use strict';
 
 const fs = require('fs');
-const reader = require('readline');
+// const reader = require('linebyline');
+const readline = require('readline');
 
 let names = ['Tia, Flowey, Maggie'];
 
@@ -61,7 +62,7 @@ let createTag = (tag, buffer) => {
 };
 
 let fileWriter = (file) => {
-  let lineReader = reader.createInterface({
+  let lineReader = readline.createInterface({
     input: fs.createReadStream(file),
   });
 

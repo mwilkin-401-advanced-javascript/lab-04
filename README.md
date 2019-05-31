@@ -5,9 +5,9 @@
 ### Author: Matt Wilkin
 
 ### Links and Resources
-[submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/4)
+[Submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/4)
 
-[travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+[Travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
 
 ### Documentation
 

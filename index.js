@@ -51,7 +51,7 @@ class Converter {
   }
 
   createTag(tag, buffer){
-    if(!tags[tag]){
+    if(! this.tags[tag]){
       this.tags[tag] = {
         open: Buffer.from(`<${tag}>`),
         close: Buffer.from(`</${tag}>`),
